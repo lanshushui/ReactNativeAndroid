@@ -20,7 +20,7 @@ class MainActivity : ReactActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         //连接Metro服务器关键，只需要sp简单保存debug_http_host字段，为当前需要连接的Metro服务器
         mPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext)
-        mPreferences?.edit()?.putString("debug_http_host","192.168.0.141:8081")?.apply()
+        mPreferences?.edit()?.putString("debug_http_host","192.168.0.137:8081")?.apply()
         super.onCreate(savedInstanceState)
     }
 }
